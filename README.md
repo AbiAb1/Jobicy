@@ -1,4 +1,4 @@
-# Jobicy: Remote Job Listing
+# Jobicy: Remote Job Listing API
 ### Description
 
 Jobicy is a job seeker platform that allows users to search for available remote job listings based on keywords. It fetches job data from an external API and displays the results in real-time on the interface. Each job listing includes important details such as job title, company name, industry, type of job, location, job description, and company logo.
