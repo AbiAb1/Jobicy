@@ -1,29 +1,9 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #007bff;
-    padding: 10px 20px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
-.navbar a.active {
-    background-color: #0056b3;
 }
 
 h1 {
@@ -72,26 +52,14 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 15px;
 }
 
-.job-details {
-    flex: 1;
-}
-
-.job-details h2 {
+.job h2 {
     margin: 0 0 10px;
 }
 
-.job-details p {
+.job p {
     margin: 5px 0;
-}
-
-.company-logo img {
-    max-width: 100px;
-    max-height: 60px;
-    object-fit: contain;
 }
 
 .job a {
@@ -101,4 +69,75 @@ h1 {
 
 .job a:hover {
     text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input, #category-select, #job-type-select, #region-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+#job-listings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.job h2 {
+    margin-bottom: 5px;
+}
+
+.job img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.job-details {
+    display: flex;
+    flex-direction: column;
 }
